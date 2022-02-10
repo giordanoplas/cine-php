@@ -1,0 +1,31 @@
+.box {
+    display: inline-block;
+    position: relative;
+
+    width: 200px;
+    height: 280px;
+}
+
+.box > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    background: none;
+}
+.back {
+    background: none;
+    -moz-transform: translateZ(-90px) translateY(20%) rotateY(90deg);;
+    transform: translateZ(-90px) translateY(20%) rotateY(90deg);
+}
+.box {
+    transition-duration: 1s;
+    transform-style: preserve-3d;
+    transform-origin: left;
+}
+.box:hover {
+    transform: perspective(800px) rotateY(-80deg);
+    -moz-transform: perspective(800px) rotateY(-80deg);
+}

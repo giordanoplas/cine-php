@@ -1,0 +1,122 @@
+#container-main{
+    /*
+    margin:40px auto;
+    width:95%;
+    min-width:320px;
+    max-width:960px;
+    */
+
+    width: 100%;
+    max-width: 340px;
+    text-align: start;
+    border: solid 2px white;    
+}
+
+#container-main .accordion-content a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+    display: block;
+
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#container-main .accordion-content a:hover {
+    background: rgba(0, 252, 34, 0.5);
+}
+
+#container-main .header {
+    text-align: center;  
+    background-color: white; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);     
+
+    margin-top: -22px;
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 340px;
+    clear: both;
+
+    margin: 10px;
+}
+
+.accordion-titulo {
+    /*
+    position: relative;
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    */
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white; 
+    
+    width: 97%;
+
+    cursor: pointer;
+}
+.accordion-titulo.open {
+    color: #279380;
+}
+.accordion-titulo:hover {
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.accordion-titulo span.toggle-icon:before {
+    /*content:"+";*/
+    content: "\f0dd"; /* the new icon */
+    font-family: FontAwesome;
+    font-size: 35px;
+    float: right;
+    margin-top: -7px;
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+    /*content:"-";*/
+    content: "\f0de"; /* the new icon */
+    font-family: FontAwesome;
+    font-size: 35px;
+    float: right;
+    margin-top: 7px;
+}
+
+.accordion-titulo span.toggle-icon {
+    position: relative;
+    right: 20px;
+}
+
+.accordion-content {
+    display: none; 
+    width: 95%; 
+}
+
+.opened {
+    display: block;
+    width: 95%;
+}
+
+.accordion-container .seleccion {
+    background-color: rgba(39, 147, 127, 0.6);
+}
+
+/*
+.accordion-content p{
+    margin:0;
+}
+*/
+
+/*
+@media (max-width: 767px) {
+    .accordion-content {
+        padding: 10px 0;
+    }
+}
+*/
