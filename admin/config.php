@@ -1,7 +1,6 @@
 <?php
 
 define('RUTA', 'http://localhost:8080/projects/cine/');
-//define('RUTA', 'https://gpdesign.site/pages/cine/');
 
 $bd_config = array(
     'host' => 'localhost',
@@ -9,15 +8,6 @@ $bd_config = array(
     'usuario' => 'root',
     'pass' => ''
 );
-
-/*
-$bd_config = array(
-    'host' => '108.167.189.26',
-    'basedatos' => 'gpdesign_cinedb',
-    'usuario' => 'gpdesign_add123',
-    'pass' => 'GPDesign@467012'
-);
-*/
 
 $cine_config = array(
     'carpeta_imagenes' => 'img/',
@@ -31,8 +21,8 @@ $cine_config = array(
 );
 
 $cine_admin = array(
-    'usuario' => 'Admin',
-    'pass' => 'Cine@1234',
+    'usuario' => '',
+    'pass' => '',
     'correo' => 'info@gpdesign.site',
     'dashboard' => RUTA . 'admin/dashboard/'
 );
